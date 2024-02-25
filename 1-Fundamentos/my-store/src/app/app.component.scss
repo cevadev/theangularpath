@@ -1,0 +1,25 @@
+/* mobile first -> pantalla celular */
+.products--grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.products--grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.products--grid h2,
+p {
+  margin: 0;
+}
+
+/* estilos para tabletas */
+@media screen and (min-width: 40em) {
+  .products--grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+  }
+}
