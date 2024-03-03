@@ -62,6 +62,13 @@ export class Fundamentos {
     },
   ];
 
+  // modelo que maneja los datos del formulario de registro
+  registerForm = {
+    name: '',
+    email: '',
+    password: '',
+  };
+
   toggleButton() {
     this.btnDisabled = !this.btnDisabled;
   }
@@ -86,5 +93,9 @@ export class Fundamentos {
   public deleteName(i: number) {
     // splice(i,1) posicion del array a eliminar y # elementos a eliminar
     this.names.splice(i, 1);
+  }
+
+  onRegister() {
+    console.info(this.registerForm);
   }
 }
